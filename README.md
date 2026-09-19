@@ -518,3 +518,8 @@ Customer-Churn-Prediction/
 ├── README.md
 │
 └── requirements.txt
+
+
+## Dashboard Preview
+
+![Customer Churn Dashboard](reports/dashboard_screenshot.png)
