@@ -498,6 +498,12 @@ Provides:
 
 ---
 
+## Dashboard Preview
+
+![Customer Churn Dashboard](reports/dashboard_screenshot.png)
+
+---
+
 ## Project Structure
 
 ```text
@@ -514,12 +520,133 @@ Customer-Churn-Prediction/
 │   └── 01_Data_Understanding.ipynb
 │
 ├── reports/
+│   └── dashboard_screenshot.png
 │
 ├── README.md
 │
 └── requirements.txt
+```
 
+---
 
-## Dashboard Preview
+## Technologies Used
 
-![Customer Churn Dashboard](reports/dashboard_screenshot.png)
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- XGBoost
+- SHAP
+- Streamlit
+- Jupyter Notebook
+- OpenPyXL
+
+---
+
+## Key Machine Learning Concepts Demonstrated
+
+This project demonstrates practical understanding of:
+
+- Exploratory Data Analysis
+- Data cleaning
+- Missing-value handling
+- Feature auditing
+- Target leakage prevention
+- Categorical encoding
+- Feature scaling
+- Stratified train/test splitting
+- Binary classification
+- Logistic Regression
+- Random Forest
+- XGBoost
+- Cross-validation
+- Hyperparameter tuning
+- Probability threshold optimization
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC
+- Confusion matrix
+- Model interpretability
+- Logistic Regression coefficients
+- Odds ratios
+- SHAP explainability
+- Customer risk segmentation
+- Business-impact analysis
+- Streamlit dashboard development
+
+---
+
+## Reproducibility
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Sushanth1303/Customer-Churn-Prediction.git
+```
+
+Navigate into the project:
+
+```bash
+cd Customer-Churn-Prediction
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Launch the Streamlit dashboard:
+
+```bash
+python -m streamlit run dashboard/app.py
+```
+
+The main analysis can be explored through:
+
+```text
+notebooks/01_Data_Understanding.ipynb
+```
+
+---
+
+## Limitations
+
+Several limitations should be considered:
+
+- The dataset represents a specific telecom customer population and may not generalize to other businesses.
+- Observed relationships do not establish causality.
+- The retention financial analysis uses illustrative assumptions rather than realized financial outcomes.
+- The 0.35 classification threshold is optimized for this project and should be recalibrated using real business costs and intervention capacity.
+- Customer churn predictions are evaluated on a held-out test set and should not be interpreted as guaranteed future outcomes.
+- CLTV is included as a modeling feature provisionally and should be verified for prediction-time availability before production deployment.
+- The Streamlit dashboard is an analytical demonstration based on held-out customer predictions rather than a production real-time prediction service.
+
+---
+
+## Future Improvements
+
+Potential future improvements include:
+
+- Hyperparameter tuning for Random Forest and XGBoost
+- Probability calibration
+- Cost-sensitive learning
+- More systematic threshold optimization using real business costs
+- Customer-level retention recommendation models
+- Model monitoring and drift detection
+- Automated model retraining
+- Real-time prediction API
+- Cloud deployment
+- A/B testing of retention strategies
+- Integration with CRM systems
+
+---
+
+## Conclusion
+
+This project demonstrates an end-to-end customer churn analytics workflow, from data understanding and exploratory analysis through machine learning, threshold optimization, explainability, customer risk segmentation, business-impact analysis, and interactive dashboard development.
+
+The main objective is not only to predict churn, but to demonstrate how machine learning predictions can be translated into interpretable customer-risk insights and potential business actions.
